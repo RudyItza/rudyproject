@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Logic Gates | FOC</title>
+
+	<!-- Link External CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Icons css 	-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<header>
+	<h2><i class="fa fa-desktop" aria-hidden="true"></i> FoC</h2>
+
+
+  <span class= "credits" >
+  	<i class="fa fa-users" aria-hidden="true"></i>
+  	Rudy, Itza
+	</span >
+</header><!-- Header -->
+
+
+<nav>
+	<h3><i class="fa fa-bars" aria-hidden="true"></i> Menu</h3>
+
+	<ul>
+      <li> <i class="fa fa-desktop" aria-hidden="true"></i><a href="dashboard.html"> Dashboard</a></li>
+
+      <li id="active"><a href="project.html"><i class="fa fa-cog" aria-hidden="true"></i> Project</a></li>
+      <li><a href="concepts.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Concepts</a></li>
+      <li><a href="database.html"><i class="fa fa-server" aria-hidden="true"></i> Database</a></li>
+      <li><a href="documentation.html"><i class="fa fa-files-o" aria-hidden="true"></i> Documentation</a></li>
+      <li><a href="team.html"><i class="fa fa-globe" aria-hidden="true"></i> Dev Team</a></li>
+
+    </ul>
+  </nav>
+	
+</nav><!-- Nav -->
+
+<article>
+	<h2><span>Course</span> <i class="fa fa-angle-double-right" aria-hidden="true"></i>  Fundamental of Computing</h2>
+
+	<div id="title">
+		<h1><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i><a href="project.html"> Projects</a> <i class="fa fa-angle-right" aria-hidden="true"></i> Logic Gates</h1>
+	</div>
+
+<!-- Content -->
+	<div id="content">
+		<div id="wrapper">
+			<h1>NOT GATE <i class="fa fa-angle-double-right" aria-hidden="true"></i></h1>
+			<hr>
+			<div id="imageBlock">
+				<h2>Input</h2>
+				<p><button style="width: 100px; height: 40px;" onclick="document.getElementById('belizeImage').src='images\\noton2.png'">ON</button></p>
+				<p><button style="width: 100px; height: 40px;" onclick="document.getElementById('belizeImage').src='images\\notoff2.png'">OFF</button></p>
+			</div>
+
+			<p>
+				<h2>Output</h2>
+				<img id="belizeImage" src="images\noton2.png" alt="noton" width="400" height="86" align="center">
+			</p>
+		</div>
+
+		<div id="wrapper">
+			<h1>AND GATE <i class="fa fa-angle-double-right" aria-hidden="true"></i></h1>
+			<hr>
+			<div id="imageBlock">
+				<script src = "javascript.js"></script>
+				<h2>Input</h2>
+				<button class="button" onclick = "and()">Run</button>
+					<p><img width="100px" src="images\off.png"  id="toggleImage" onclick="toggleImage(); toggleInputOne();"/></p>
+					<p><img width="100px" src="images\off.png"  id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();"/></p>
+			</div>
+
+			<p>
+				<h2>Output</h2>
+				<img width="55%" id="andGate" src="images\and2off.png" >
+			</p>
+		</div>
+
+		<div id="wrapper">
+			<h1>OR GATE <i class="fa fa-angle-double-right" aria-hidden="true"></i></h1>
+			<hr>
+			<div id="imageBlock">
+				<h2>Input</h2>
+				<button class="button" onclick="document.getElementById('orgate').src='images\\or00.jpg'">0 or 0</button><br>
+				<button class="button" onclick="document.getElementById('orgate').src='images\\or01.jpg'">0 or 1</button><br>
+				<button class="button" onclick="document.getElementById('orgate').src='images\\or10.jpg'">1 or 0</button><br>
+				<button class="button" onclick="document.getElementById('orgate').src='images\\or11.jpg'">1 or 1</button><br>
+			</div>
+
+			<p>
+				<h2>Output</h2>
+				<img width="55%" id="orgate" src="images\or00.jpg" >
+			</p>
+		</div>
+
+		<div id="wrapper">
+			<h1>XOR GATE <i class="fa fa-angle-double-right" aria-hidden="true"></i></h1>
+			<hr>
+			<div id="imageBlock">
+				<h2>Input</h2>
+				<button class="button" onclick="document.getElementById('xorgate').src='images\\0XOR0.png'">0 XOR 0</button><br>
+				<button class="button" onclick="document.getElementById('xorgate').src='images\\0XOR1.png'">0 XOR 1</button><br>
+				<button class="button" onclick="document.getElementById('xorgate').src='images\\1XOR0.png'">1 XOR 0</button><br>
+				<button class="button" onclick="document.getElementById('xorgate').src='images\\1XOR1.png'">1 XOR 1</button><br>
+			</div>
+
+			<p>
+				<h2>Output</h2>
+				<img width="55%" id="xorgate" src="images\0XOR0.png">
+			</p>
+		</div>
+
+		<div id="wrapper">
+			<h1>FlipFlop Circuit <i class="fa fa-angle-double-right" aria-hidden="true"></i></h1>
+			<hr>
+			<div id="imageBlock">
+				<h2>Input</h2>
+				<button class="button" onclick="document.getElementById('fipflop').src='images\\FlipFlop1.png'">0 and 0</button><br>
+				<button class="button" onclick="document.getElementById('fipflop').src='images\\FlipFlop2.png'">0 and 1</button><br>
+				<button class="button" onclick="document.getElementById('fipflop').src='images\\FlipFlop3.png'">1 and 0</button><br>
+			</div>
+
+			<p>
+				<h2>Output</h2>
+				<img width="55%" id="fipflop" src="images\FlipFlop1.png">
+			</p>
+		</div>
+
+	</div>
+	</div>
+<!-- Content -->
+
+</article>
+
+<!-- Footer -->
+<footer>
+	<span id="credits">
+	  <i class="fa fa-copyright" aria-hidden="true"></i> 2024, All Rights Reserved 
+	  | <i class="fa fa-code" aria-hidden="true"></i> Developed by Rudy Itza 
+	  | <i class="fa fa-heart" aria-hidden="true"></i> Made with Passion
+	</span>
+  </footer>
+
+
+</body>
+</html>
