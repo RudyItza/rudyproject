@@ -153,7 +153,7 @@ header {
   position: fixed;
   width: 100%;
   height: 50px;
-  color: #fff;
+  color: #ca1b1b;
   background-color: #175529;
   z-index: 1;
 }
@@ -237,6 +237,7 @@ nav ul li a:hover {
 nav ul li#active {
   border-left: 2px solid #a5c9ad;
   padding-left: 10px;
+  
 }
 
 nav ul li a,
@@ -360,6 +361,9 @@ article p {
   width: 570px;
   color: #1e793c;
 }
+#green{
+  color:#1e793c;
+}
 
 article div#dev {
   position: relative;
@@ -390,7 +394,7 @@ article div#dev h3 {
   font-style: italic;
   font-size: 15px;
   line-height: 35px;
-  color: #357da6;
+  color: #1e793c;
   background-color: #ffffff;
   border-bottom: 1px solid #e3e6e8;
 }
